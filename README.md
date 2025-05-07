@@ -1,4 +1,3 @@
-
 # 🛍️ Smartfy Retail API
 
 Bienvenido a la documentación oficial de la **Smartfy Retail API**. Esta API permite a nuestros clientes integrarse fácilmente con nuestra plataforma de retail digital para realizar operaciones en tiempo real de forma segura y eficiente.
@@ -76,6 +75,8 @@ POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
 
 ## 📤 Ejemplo de payload para orden de mercado
 
+> 💡 **Nota**: Los campos `totalAmount` y `totalAmountIncTax` se obtienen desde el `localStorage`, accediendo a la propiedad `selectedProduct`, una vez que el cliente haya seleccionado el producto a través del SDK proporcionado por Smartfy.
+
 ```json
 {
   "surname1": "Pérez",
@@ -105,8 +106,6 @@ POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
   "totalAmountIncTax": 699.00,
   "logisticCost": 0,
   "marketOrderCode": "{{$guid}}",
-  > ℹ️ Los datos necesarios para `marketOrderItem` (como `skuRetailer`, `unitPrice`, `duration`) se obtienen a través del SDK proporcionado por Smartfy.
-
   "marketOrderItem": [
     {
       "skuRetailer": "328950-XXX-XXX",
@@ -156,8 +155,6 @@ Este es un ejemplo completo del JSON que se debe enviar al endpoint `/api/v1/mar
 
 Esta es una respuesta típica al crear una orden de mercado correctamente. Incluye el identificador de la orden, los productos asociados y detalles como precio y fechas.
 
-
-
 ---
 
 ## 🚀 Inicio del proceso de onboarding
@@ -175,4 +172,3 @@ Debes redirigir al cliente a una de las siguientes URLs, incluyendo el `requestC
 | `prod`      | https://onboarding-retail.smartfy.tech/?requestCode=cb834f46-ddcf-41e0-9204-c6e0d3907c53 |
 
 Esto iniciará el flujo de onboarding personalizado para el usuario correspondiente a la orden generada.
-
