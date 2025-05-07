@@ -105,7 +105,8 @@ POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
   "totalAmount": 577.69,
   "totalAmountIncTax": 699.00,
   "logisticCost": 0,
-  "marketOrderCode": "{{$guid}}",
+  "marketOrderCode": "{{$guid}}", Esto debe ser un GUID generado aleatoriamente.
+  > ℹ️ Los datos necesarios para `marketOrderItem` (como `skuRetailer`, `unitPrice`, `duration`) se obtienen a través del SDK proporcionado por Smartfy.
   "marketOrderItem": [
     {
       "skuRetailer": "328950-XXX-XXX",
