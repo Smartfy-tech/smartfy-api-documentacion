@@ -1,6 +1,6 @@
-# 🛍️ Smartfy Retail API
+# 🛍️ Smartfy API
 
-Bienvenido a la documentación oficial de la **Smartfy Retail API**. Esta API permite a nuestros clientes integrarse fácilmente con nuestra plataforma de retail digital para realizar operaciones en tiempo real de forma segura y eficiente.
+Bienvenido a la documentación oficial de la **Smartfy API**. Esta API permite a nuestros clientes integrarse fácilmente con nuestra plataforma digital para realizar operaciones en tiempo real de forma segura y eficiente.
 
 ## 🌐 Entornos disponibles
 
@@ -106,6 +106,7 @@ POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
   "totalAmountIncTax": 699.00,
   "logisticCost": 0,
   "marketOrderCode": "{{$guid}}", Esto debe ser un GUID generado aleatoriamente.
+
   > ℹ️ Los datos necesarios para `marketOrderItem` (como `skuRetailer`, `unitPrice`, `duration`) se obtienen a través del SDK proporcionado por Smartfy.
   "marketOrderItem": [
     {
