@@ -59,7 +59,7 @@ A continuación se detallan algunos de los endpoints básicos disponibles tras a
 POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
 ```
 
-**Descripción**: Crea una nueva orden de mercado con los productos seleccionados.
+**Descripción**: Crea una nueva "market order" con los productos seleccionados.
 
 ---
 
@@ -121,7 +121,7 @@ Este es un ejemplo completo del JSON que se debe enviar al endpoint `/api/v1/mar
 
 ---
 
-## 📥 Ejemplo de respuesta de una orden de mercado exitosa
+## 📥 Ejemplo de respuesta de una "market order" exitosa
 
 ```json
 {
@@ -154,13 +154,13 @@ Este es un ejemplo completo del JSON que se debe enviar al endpoint `/api/v1/mar
 }
 ```
 
-Esta es una respuesta típica al crear una orden de mercado correctamente. Incluye el identificador de la orden, los productos asociados y detalles como precio y fechas.
+Esta es una respuesta típica al crear una "market order" correctamente. Incluye el identificador, los productos asociados y detalles como precio y fechas.
 
 ---
 
 ## 🚀 Inicio del proceso de onboarding
 
-Una vez creada la orden de mercado y obtenida una respuesta exitosa, se usará el `requestCode` proporcionado para iniciar el proceso de onboarding del cliente en la plataforma Smartfy.
+Una vez creada la "market order" y obtenida una respuesta exitosa, se usará el `requestCode` proporcionado para iniciar el proceso de onboarding del cliente en la plataforma Smartfy.
 
 ### 🔗 Redirección según entorno
 
