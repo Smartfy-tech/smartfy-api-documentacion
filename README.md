@@ -36,7 +36,7 @@ POST https://dev-api-retail.smartfy.tech/api/v1/users/login_check
 ### Respuesta esperada
 ```json
 {
-  "token": "eyJ0eXAiOiJKV1QiLCJh..."
+  "token": "123456789abcdef"
 }
 ```
 
@@ -53,7 +53,7 @@ Authorization: Bearer <tu_token>
 
 A continuación se detallan algunos de los endpoints básicos disponibles tras autenticarte correctamente:
 
-### 1. Crear orden de mercado
+### 1. Crear un "marker-order"
 
 ```http
 POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
@@ -73,12 +73,13 @@ POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
 
 ---
 
-## 📤 Ejemplo de payload para orden de mercado
+## 📤 Ejemplo de payload para "marker-order"
 
 > 💡 **Nota**: Los campos `totalAmount` y `totalAmountIncTax` se obtienen desde el `localStorage`, accediendo a la propiedad `selectedProduct`, una vez que el cliente haya seleccionado el producto a través del SDK proporcionado por Smartfy.
 
 ```json
 {
+  "name": "Juan",
   "surname1": "Pérez",
   "surname2": "García",
   "email": "mi@email.com",
@@ -90,7 +91,6 @@ POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
   "address": "Avda. De La Ciudead De Barcelona 97",
   "addressExtended": "nº 97, 4A",
   "streetName": "Avda. De La Ciudad De Barcelona",
-  "name": "Juan",
   "number": "9",
   "stairs": null,
   "floor": "2ºb",
