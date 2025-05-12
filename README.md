@@ -26,12 +26,13 @@ POST https://dev-api-retail.smartfy.tech/api/v1/users/login_check
 ```
 
 ### Cuerpo de la petición (`Content-Type: application/json`)
+> **Nota:** El usuario y la contraseña son proporcionados por **Smarfty**.
+
 ```json
 {
   "username": "tu_usuario",
   "password": "tu_contraseña"
 }
-```
 
 ### Respuesta esperada
 ```json
