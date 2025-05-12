@@ -33,6 +33,7 @@ POST https://dev-api-retail.smartfy.tech/api/v1/users/login_check
   "username": "tu_usuario",
   "password": "tu_contraseña"
 }
+```
 
 ### Respuesta esperada
 ```json
