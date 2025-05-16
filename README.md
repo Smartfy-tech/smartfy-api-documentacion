@@ -86,7 +86,7 @@ POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
   "surname2": "García",
   "email": "mi@email.com",
   "phone1": "619881597",    
-  "document": "79367193Z", 
+  "document": "79367193Z", Debe ser un número de documento válido para pasar al onboarding.
   "documentType": "NIE",
   "birthDate": "1995-08-17",
   "addressType": "avda",
@@ -107,7 +107,8 @@ POST https://dev-api-retail.smartfy.tech/api/v1/market-orders
   "totalAmount": 577.69,
   "totalAmountIncTax": 699.00,
   "logisticCost": 0,
-  "marketOrderCode": "{{$guid}}", Esto debe ser un GUID generado aleatoriamente.
+  "marketOrderCode": "{{$guid}}", Esto debe ser un GUID generado aleatoriamente (Uno para cada petición).
+  "callbackUrl": "visalia.es", URL para que el usuario vuelva al paso que toque en la plataforma de Visalia.
 
   > ℹ️ Los datos necesarios para `marketOrderItem` (como `skuRetailer`, `unitPrice`, `duration`) se obtienen a través del SDK proporcionado por Smartfy.
   "marketOrderItem": [
