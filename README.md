@@ -171,8 +171,8 @@ Debes redirigir al cliente a una de las siguientes URLs, incluyendo el `requestC
 
 | Entorno     | URL completa con `requestCode` de ejemplo |
 |-------------|-------------------------------------------|
-| `dev`       | https://dev-onboarding-retail.smartfy.tech/?requestCode=cb834f46-ddcf-41e0-9204-c6e0d3907c53 |
-| `pre`       | https://pre-onboarding-retail.smartfy.tech/?requestCode=cb834f46-ddcf-41e0-9204-c6e0d3907c53 |
-| `prod`      | https://onboarding-retail.smartfy.tech/?requestCode=cb834f46-ddcf-41e0-9204-c6e0d3907c53 |
+| `dev`       | https://dev-onboarding-retail.smartfy.tech/cb834f46-ddcf-41e0-9204-c6e0d3907c53 |
+| `pre`       | https://pre-onboarding-retail.smartfy.tech/cb834f46-ddcf-41e0-9204-c6e0d3907c53 |
+| `prod`      | https://onboarding-retail.smartfy.tech/cb834f46-ddcf-41e0-9204-c6e0d3907c53 |
 
 Esto iniciará el flujo de onboarding personalizado para el usuario correspondiente a la orden generada.
